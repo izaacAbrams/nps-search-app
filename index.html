@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National Park Lookup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="top-section">
+        <header>
+            <h1 class="header-main">State Park Lookup</h1>
+        </header>
+        <form action="">
+            <label for="state-input">Which state are you going to?</label>
+            <input type="text" class="state-lookup" placeholder="ex. CO KY" id="state-input" required><br>
+            <label for="max-num">How many results do you want?</label>
+            <input type="number" id="max-num" value="10"><br>
+            <input type="submit" value="Submit" id="submit-btn">
+        </form>
+        <p id="error-message"></p>
+    </section>
+    <section class="results-page hidden">
+        <h3 class="result-header">Results:</h3>
+        <ul class="results"></ul>
+
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
