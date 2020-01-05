@@ -32,7 +32,7 @@ function showResults(responseJson){
         $('.results').append(
             `<li><h2 class="result-title">${responseJson.data[i].fullName}</h2>
             <p>${responseJson.data[i].description}</p>
-            <p><a href="${responseJson.data[i].url}">Website</a>
+            <p><a href="${responseJson.data[i].url}">${responseJson.data[i].url}</a>
             <a href="${responseJson.data[i].directionsUrl}">Directions</a></p>
             <p>${responseJson.data[i].addresses[0].type}: ${responseJson.data[i].addresses[0].line1},
             ${responseJson.data[i].addresses[0].city}, ${responseJson.data[i].addresses[0].stateCode}</p>
